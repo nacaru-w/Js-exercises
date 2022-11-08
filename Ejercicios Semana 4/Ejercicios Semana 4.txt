@@ -1,0 +1,11 @@
+1 - Utilizando una ternaria, realizar un código que dado un número par o impar, la ternaria vuelque el valor "Es par" o "Es impar" en una variable, y después lo imprima por consola. Consideramos el 0 como par.
+
+2- Utilizando una ternaria, realizar un código que dado un número indique si es positivo o negativo. La ternaria debe volcar el valor "Es positivo" o "Es negativo" en una variable, y después lo imprima por consola. Consideramos el 0 como positivo.
+
+3- Utilizando un if, indicar si un coche es nuevo o viejo. Consideramos que un coche es viejo si tiene más de 60000 Km. Debemos volcar el texto "Es nuevo" o "Es viejo" en una variable, y después imprimir el dato por consola.
+
+4- Repetir el ejercicio anterior usando una ternaria.
+
+5- Utilizando if, crear un código que indique si una persona puede conducir. Una persona podrá conducir si su edad es de 18 años o más y su tasa de alcohol en sangre sea menor que 0.25 mg/l. Ambos valores deben ser leídos por teclado.
+
+6- Repetir el ejercicio anterior usando una ternaria.

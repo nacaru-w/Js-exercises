@@ -1,0 +1,13 @@
+
+1- Se le pide a un usuario que introduzca su password, en caso de que el 
+password tenga 5 caracteres o menos, se lazará un error que diga 
+"El password es muy corto", y si pasa de 12 caracteres, 
+se lanzará otro error indicando que "El password es muy largo". 
+Sólo si el password tiene la longitud correcta, se mostrará el mensaje 
+"Bienvenido usuario".
+
+2- Se le pide al usuario que introduzca la edad de una persona. 
+En caso de que la edad sea negativa, se le mostrará un mensaje que indique 
+que las personas no podemos tener edades negativas. Si inserta una cifra mayor 
+de 130 años se le informará que la persona más longeva ahora mismo tiene 122 años. 
+Y en cualquier otro caso se mostrará la edad por pantalla.

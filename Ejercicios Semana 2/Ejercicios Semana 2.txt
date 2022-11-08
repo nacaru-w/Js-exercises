@@ -1,0 +1,10 @@
+1- Escribir un código que dada una cantidad en Euros leída por teclado, escriba por pantalla su equivalente en pesetas
+1 € = 166,386 pesetas
+
+2- Escribir un código que devuelva el cubo de un número leído por teclado
+
+3- Escribir un código que dados dos números leídos por teclado, escriba por pantalla su suma, resta, multiplicación y división.
+
+4- Escribir un código que dado un numero leído por teclado escriba el mensaje "El numero leído es positivo" o bien el mensaje "El numero leído es negativo" dependiendo de que el numero sea positivo o negativo. Consideramos al número 0 positivo.
+
+5 - Escribir un código que escriba por pantalla "El número es par" si se le pasa un número par a la función o "El número es impar" en caso de que se le pase un número impar. Se deberá utilizar el operador modulus de JavaScript (%)

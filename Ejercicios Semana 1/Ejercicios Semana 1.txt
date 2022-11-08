@@ -1,0 +1,59 @@
+1- ¿Qué valores quedan almacenados en las variables a, b y c? Realiza la implementación de un código que realice todas las operaciones propuestas a continuación y contrasta el resultado con tu propio cálculo mental:
+
+a = 10
+b = 20
+c = 5
+a = a + 3
+b = b + 4 - a
+c = a + b + c
+a = a + c
+b = 4
+c = c + 3 - b + 2
+
+Fíjate especialmente en que se utilizan algunas variables dentro del cálculo que a a su vez son las mismas en las que se vuelca el resultado como en c = a + b + c, ¿cuál es el valor de c antes y después de esa línea?
+
+----------------------------------------
+2- Similar al anterior caso, ¿qué valores quedan almacenados en las variables a, b, c y d?
+
+a = 5
+b = 18
+c = 15
+d = 22
+a = a + 10
+b = b + 5 - c
+c = c + 4 + b
+d = d + b + a
+a = a + 1
+b = b + c
+c = b + c
+d = b + b
+
+----------------------------------------
+3 - Escribid un código que dado un número escriba por pantalla el número leído, el doble del número leído y el triple del número leído y el cuadrado del número leído.
+
+
+----------------------------------------
+4- Escribid un programa en JavaScript que calcule el perímetro y el área de un rectángulo de lados 20 y 80 unidades. Probad con otros valores utilizando prompt().
+
+
+----------------------------------------
+5- Escribir un código que, dado radio de una circunferencia, calcule en una nueva variable y escriba en pantalla la longitud de la circunferencia y el área del círculo.
+a) Longitud de la circunferencia: 2 * 3.1416 * radio
+b) Área del círculo: 3.1416 * radio^2
+
+
+----------------------------------------
+6- Escribid un programa en JavaScript que calcule el sueldo mensual a
+partir del número de horas trabajadas (160 horas) y el precio por hora trabajada (12?).
+Probad con otros valores.
+
+
+----------------------------------------
+7- Hacer un código que dadas dos variables X e Y, intercambie sus valores, y X acabe teniendo el valor de Y e Y el valor de X. Los valores para hacer el cambio deberán ser:
+
+var x = "Hola";
+var y = 3;
+
+Cuando el programa termine x debe valer 3 e y "Hola".
+
+ 

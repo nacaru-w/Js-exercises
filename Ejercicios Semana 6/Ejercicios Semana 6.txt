@@ -1,0 +1,47 @@
+1- Escribir un programa en el que dado un número del 0 al 9, aparezca su valor en binario. 
+Los valores en binario son:
+
+0 = 0
+1 = 1
+2 = 01
+3 = 10
+4 = 11
+5 = 100
+6 = 101
+7 = 110
+8 = 111
+9 = 1000
+
+2- Calcular cuál es el valor total de la hipoteca si, dado un valor leído por teclado, 
+sabemos que el banco nos cobra un 31% más de ese valor por pedir la hipoteca con ellos.
+
+3- Realizar un programa que pida dos números por teclado al usuario, 
+e indique cuál de los dos es mayor o si son iguales.
+
+4- Realizar un programa que simule una compra en una web. El usuario deberá introducir 
+una cantidad por teclado.
+
+En caso de que esa cantidad sea 30 ? o más, se le mostrará un mensaje por el valor de 
+su compra, indicando que como ha pasado de 30 ?, el envío es gratis. En caso de que se
+inserte una cantidad menor, se le mostrará un mensaje con el valor de su compra 
+detallando un envío de 4.95 ? y sumando ese costo al de su compra.
+
+
+5- Un usuario va a una heladería, habrá que calcular el costo del helado según las 
+siguientes características:
+
+- El usuario puede elegir cono o tarrina, y esto dará el precio base del helado
+- Cono: 1.55 ?
+- Tarrina: 2 ?
+
+- El usuario puede elegir un sabor, y habrá ciertos sabores que incrementen el precio.
+- Vainilla y Chocolate: +0 ?
+- Turrón, Menta, Oreo: + 0.5 ?
+- Crema, Café, Almendras: +1 ?
+
+Se pide, dados las dos variables leídas por teclado (una para cono o tarrina y otra para 
+sabor) calcular el costo total del helado. En caso de que el usuario no escriba bien 
+"cono" o "tarrina" se lanzará un error y se mostrará por pantalla: 
+"Contenedor Incorrecto". En caso de que el texto del sabor no esté bien introducido se 
+lanzará un error y se mostrará por pantalla: "Ese sabor no está disponible"
+Si se produce cualquier error, el programa mostrará un costo de 0 ? por el helado.

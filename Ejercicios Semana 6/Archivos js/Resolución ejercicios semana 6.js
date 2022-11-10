@@ -73,7 +73,7 @@ function finalMortgageValue(input) {
         } else if (isNaN(input)) {
             throw "El valor debe de ser un número"
         } else {
-            alert(`El valor total con pŕestamo es de ${(input * 1.31).toFixed(2)} €`)
+            alert(`El valor total con préstamo es de ${(input * 1.31).toFixed(2)} €`)
         }
     } catch (e) {
         alert(e)

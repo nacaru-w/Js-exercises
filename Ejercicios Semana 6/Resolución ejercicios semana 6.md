@@ -2,11 +2,14 @@
 title: "Introducción a Javascript I: ejercicios semana 4"
 author: Ignacio Casares Ruiz
 documentclass: scrartcl
+colorlinks: true
 header-includes:
 - \usepackage[a4paper, margin=2cm]{geometry}
 ---
 
 ## 1.
+
+[Enlace del ejercicio en codepen.io](https://codepen.io/nacaru/pen/LYrxEBV) 
 
 ```js
 
@@ -57,6 +60,8 @@ binaryValue (+prompt ("Escribe un número del 0 al 9 para conocer su binario"))
 
 
 ## 2.
+
+[Enlace del ejercicio en codepen.io](https://codepen.io/nacaru/pen/LYrxEBV) 
 
 ```js
 

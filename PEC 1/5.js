@@ -74,9 +74,9 @@ try {
     } else if ((numeroMes == 6 && diaDelMes >= 21) || numeroMes == 7 || numeroMes == 8 || (numeroMes == 9 && diaDelMes <= 20)) {
         estacion = "verano";
     } else if ((numeroMes == 9 && diaDelMes >= 21) || numeroMes == 10 || numeroMes == 11 || (numeroMes == 12 && diaDelMes <= 20)) {
-        estacion = "otoño"
+        estacion = "otoño";
     } else {
-        throw "Error: se ha producido un error"
+        throw "Error: se ha producido un error";
     }
 
     alert(`El mes es ${mesEscrito} y la estación es ${estacion}`)

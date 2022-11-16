@@ -79,8 +79,8 @@ try {
         throw "Error: se ha producido un error";
     }
 
-    alert(`El mes es ${mesEscrito} y la estación es ${estacion}`)
+    console.log(`El mes es ${mesEscrito} y la estación es ${estacion}`)
 
 } catch (error) {
-    alert(error)
+    console.log(error)
 }

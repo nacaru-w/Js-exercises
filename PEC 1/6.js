@@ -30,7 +30,7 @@ let d13 = +prompt("Escribe el decimotercer dígito o dígito de control")
 let sumaD = d1 + d2 * 3 + d3 + d4 * 3 + d5 + d6 * 3 + d7 + d8 * 3 + d9 + d10 * 3 + d11 + d12 * 3
 
 if ((sumaD + d13) % 10 == 0) {
-    alert("CORRECTO")
+    console.log("CORRECTO")
 } else {
-    alert("INCORRECTO")
+    console.log("INCORRECTO")
 }

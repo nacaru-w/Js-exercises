@@ -29,5 +29,5 @@ if (valorA == valorB + valorC) {
     textoFinal = "Los números no cumplen la condición"
 }
 
-alert(`Números introducidos: ${valorA}, ${valorB}, ${valorC}.
+console.log(`Números introducidos: ${valorA}, ${valorB}, ${valorC}.
 ${textoFinal}`)

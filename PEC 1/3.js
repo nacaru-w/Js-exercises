@@ -16,8 +16,8 @@ try {
     else {
         let retencion = (sueldoInicial * 0.2).toFixed(2);
         let sueldoFinal = (sueldoInicial - retencion).toFixed(2);
-        alert(`El sueldo inicial es de ${sueldoInicial.toFixed(2)} €, tras aplicársele la retención del 20%, equivalente a ${retencion} €, el sueldo final es de ${sueldoFinal} €`);
+        console.log(`El sueldo inicial es de ${sueldoInicial.toFixed(2)} €, tras aplicársele la retención del 20%, equivalente a ${retencion} €, el sueldo final es de ${sueldoFinal} €`);
     }
 } catch (err) {
-    alert(err);
+    console.log(err);
 }

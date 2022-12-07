@@ -43,6 +43,22 @@ Salida del programa:
 La suma de la serie es: 111105
 */
 
+function seriesAndAddition(number, repetitions) {
+    let series = '';
+    let thisLoopNumber = '';
+    let addition = 0;
+    for (let counter = 1; counter <= repetitions; counter++) {
+        thisLoopNumber += number
+        series += thisLoopNumber + ' '
+        addition += thisLoopNumber
+    }
+    console.log(thisLoopNumber)
+    console.log(series)
+    console.log(addition)
+}
+
+seriesAndAddition(prompt("Escribe un número"), +prompt("Escribe el número de repeticiones"))
+
 
 /* 4- Vamos a realizar un código que con un bucle se recoja la lista de 10 invitados a una fiesta. Cada vez que el bucle itere, obtendré un nuevo nombre que se añadirá a la lista.
 La salida debe ser: "Lista de invitados: Paquita, Lucia, Manuel, Rodrigo, Roberto, Susana, Pepe, Paco, Maria, Antonio"

@@ -50,9 +50,8 @@ function seriesAndAddition(number, repetitions) {
     for (let counter = 1; counter <= repetitions; counter++) {
         thisLoopNumber += number
         series += thisLoopNumber + ' '
-        addition += thisLoopNumber
+        addition += +thisLoopNumber
     }
-    console.log(thisLoopNumber)
     console.log(series)
     console.log(addition)
 }

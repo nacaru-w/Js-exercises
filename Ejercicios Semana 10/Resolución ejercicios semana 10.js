@@ -17,6 +17,23 @@ howManyA(prompt('Escribe una frase para averiguar cuantas «A» hay en ella', 'A
 // 2- Hacer un programa que cuente el número de palabras que hay en una cadena terminada en punto, teniendo en cuenta que entre palabra y palabra hay siempre un espacio (y sólo un espacio).
 // Por ejemplo: "Ayer me encontré con Tomas y me preguntó por Laura."
 
+function howManyWords(string) {
+    if (string[string.length - 1] !== '.') {
+        string = string + '.'
+    }
+    let wordCounter = 0;
+    let index = 0;
+    do {
+        if (string[index] == ' ' || (string[index] == '.' && index == string.length - 1)) {
+            wordCounter += 1
+        }
+        index++
+    } while ((index - 1) <= string.length);
+    console.log(`Hay un total de ${wordCounter} palabras en esa frase`);
+}
+
+howManyWords(prompt('Escribe una frase para averiguar cuántas palabras hay en ella', 'Ayer me encontré con Tomas y me preguntó por Laura.'));
+
 
 /* 3- Crear una código que dado un número introducido por teclado, y otro indicando el número de repeticiones cree y sume la una serie como la siguiente:
 Número: 9

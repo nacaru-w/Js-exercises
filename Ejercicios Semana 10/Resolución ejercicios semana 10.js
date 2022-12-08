@@ -114,15 +114,24 @@ unevenToInputNumber(+prompt("Escribe un número para conocer todos los números 
 // 7- Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla la cuenta atrás desde ese número hasta cero separados por comas. En caso de que el número introducido no sea entero positivo, se mostrara un error.
 
 function countDown(inputNumber) {
-    let finalString = ''
-    for (let counter = inputNumber; counter >= 0; counter--) {
-        if (counter == inputNumber) {
-            finalString += counter
+    try {
+        if (inputNumber < 0 || inputNumber - Math.floor(inputNumber) !== 0) {
+            throw "Debe de ser un número entero positivo"
         } else {
-            finalString += ', ' + counter
+            let finalString = ''
+            for (let counter = inputNumber; counter >= 0; counter--) {
+                if (counter == inputNumber) {
+                    finalString += counter
+                } else {
+                    finalString += ', ' + counter
+                }
+            }
+            console.log(finalString)
         }
+    } catch (e) {
+        console.log(e)
     }
-    console.log(finalString)
+
 }
 
 countDown(+prompt('Escribe un número para ver todos los número desde ese hasta el 0'))

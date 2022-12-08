@@ -186,7 +186,9 @@ function allDailySeconds() {
     for (let hourCounter = 0; hourCounter <= 24; hourCounter++) {
         for (let minuteCounter = 0; minuteCounter <= 59; minuteCounter++) {
             for (let secondCounter = 0; secondCounter <= 59; secondCounter++) {
-                console.log(`${hourCounter < 10 ? "0" + hourCounter : hourCounter}:${minuteCounter < 10 ? "0" + minuteCounter : minuteCounter}:${secondCounter < 10 ? "0" + secondCounter : secondCounter}`)
+                console.log(`${hourCounter < 10 ? "0" + hourCounter : hourCounter}` + ':' +
+                    `${minuteCounter < 10 ? "0" + minuteCounter : minuteCounter}` + ':' +
+                    `${secondCounter < 10 ? "0" + secondCounter : secondCounter}`)
             }
         }
     }

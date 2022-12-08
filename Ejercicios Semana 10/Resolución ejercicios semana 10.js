@@ -64,17 +64,68 @@ La salida debe ser: "Lista de invitados: Paquita, Lucia, Manuel, Rodrigo, Robert
 Fijaos que no incluye una "," en la última posición
 */
 
+function guestList() {
+    let finalList = ''
+    for (let counter = 1; counter <= 10; counter++) {
+        if (counter == 10) {
+            finalList += prompt("Escribe el nombre del último invitado")
+        } else {
+            finalList += prompt(`Escribe el nombre del invitado número ${counter}`) + ', '
+        }
+    }
+    console.log(`Lista de invitados: ${finalList}`)
+}
+
+guestList()
 
 // 5- Repetir el ejercicio anterior, pero recogiendo un número ilimitado de nombres, que se detendrá cuando el usuario introduzca el texto "STOP".
 // Una vez recogidos esos nombres se deberá mostrar: "Lista de invitados: Maria, Lucia, Rodrigo, Roberto, Manuel, Leticia, Susana, Luis, Fernando, Esther, Antonio"
 
+function customLengthGuestList() {
+    let finalList = ''
+    let guest = ''
+    while (guest != "STOP") {
+        finalList == '' ? finalList += guest : finalList += ', ' + guest
+        guest = prompt("Añade un invitado. Para parar escribe «STOP»")
+    }
+    console.log(`Lista de invitados: ${finalList}`)
+}
+
+customLengthGuestList()
 
 // 6- Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla en una sola cadena de texto todos los números impares desde 1 hasta ese número separados por comas.
+function unevenToInputNumber(inputNumber) {
+    let finalString = ''
+    for (let counter = 1; counter <= inputNumber; counter++) {
+        if (counter % 2 == 1) {
+            if (counter == 1) {
+                finalString += counter
+            } else {
+                finalString += ', ' + counter
+            }
 
+        }
+    }
+    console.log(finalString)
+}
+
+unevenToInputNumber(+prompt("Escribe un número para conocer todos los números impares hasta él"))
 
 // 7- Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla la cuenta atrás desde ese número hasta cero separados por comas. En caso de que el número introducido no sea entero positivo, se mostrara un error.
 
+function countDown(inputNumber) {
+    let finalString = ''
+    for (let counter = inputNumber; counter >= 0; counter--) {
+        if (counter == inputNumber) {
+            finalString += counter
+        } else {
+            finalString += ', ' + counter
+        }
+    }
+    console.log(finalString)
+}
 
+countDown(+prompt('Escribe un número para ver todos los número desde ese hasta el 0'))
 
 /* 
 8- Escribir un programa que nos pida un número por teclado, y que dibuje el triángulo de FLOYD para ese número. El triángulo está formado por tantas líneas como el número leído, teniendo la primera línea un número, y uno más cada una de las líneas siguientes. Los números son los naturales empezando por el 1. El triángulo de floyd para n=5 sería:
@@ -85,6 +136,24 @@ Fijaos que no incluye una "," en la última posición
 7 8 9 10
 11 12 13 14 15
 */
+
+function floydMaker(inputNumber) {
+    let floyd = ''
+    let loops = 0
+    let loopsToLineBreak = 1
+    for (let counter = 1; counter <= inputNumber; counter++) {
+        loops++
+        floyd += counter + ' '
+        if (loops == loopsToLineBreak) {
+            loops = 0
+            floyd += "\n"
+            loopsToLineBreak++
+        }
+    }
+    console.log(floyd)
+}
+
+floydMaker(+prompt("Inserta un número para formar su triángulo de Floyd"))
 
 /*
 9- Crear un código que imprima por pantalla todas las horas del día, mostrando horas minutos y segundos.
@@ -112,3 +181,15 @@ Fijaos que no incluye una "," en la última posición
 23:59:58
 23:59:59
 */
+
+function allDailySeconds() {
+    for (let hourCounter = 0; hourCounter <= 24; hourCounter++) {
+        for (let minuteCounter = 0; minuteCounter <= 59; minuteCounter++) {
+            for (let secondCounter = 0; secondCounter <= 59; secondCounter++) {
+                console.log(`${hourCounter < 10 ? "0" + hourCounter : hourCounter}:${minuteCounter < 10 ? "0" + minuteCounter : minuteCounter}:${secondCounter < 10 ? "0" + secondCounter : secondCounter}`)
+            }
+        }
+    }
+}
+
+allDailySeconds()

@@ -85,7 +85,7 @@ function threeFactorToNumber(number) {
             counter == 3 ? finalString += counter : finalString += ', ' + counter;
         }
     }
-    console.log(finalString)
+    console.log(finalString);
 }
 
 threeFactorToNumber(+prompt("Escribe un número para conocer todos los múltiplos de tres hasta ese número"))

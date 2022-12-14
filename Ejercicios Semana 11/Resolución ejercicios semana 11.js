@@ -11,6 +11,7 @@ function averageCalculator() {
     }
     console.log(aggregator)
 }
+
 averageCalculator()
 
 // 2- Utilizando bucles, genera dinámicamente la siguiente serie:

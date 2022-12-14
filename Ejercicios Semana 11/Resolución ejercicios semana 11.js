@@ -77,3 +77,15 @@ howManyVowels(prompt("Escribe una frase para conocer el número de vocales en el
 
 // 5- Crear un programa que muestre todos los números que son múltiplos de 3 en una única lista concatenada de la siguiente forma:
 // 3, 6, 9, 12, ...
+
+function threeFactorToNumber(number) {
+    let finalString = '';
+    for (let counter = 1; counter <= number; counter++) {
+        if (counter % 3 == 0) {
+            counter == 3 ? finalString += counter : finalString += ', ' + counter;
+        }
+    }
+    console.log(finalString)
+}
+
+threeFactorToNumber(+prompt("Escribe un número para conocer todos los múltiplos de tres hasta ese número"))

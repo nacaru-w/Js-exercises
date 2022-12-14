@@ -18,12 +18,14 @@ averageCalculator()
 // 23 será el último dígito de la serie.
 
 function hopper() {
+    finalString = ''
     let i = 1;
     do {
-        console.log(i)
-        console.log(i + 4)
+        i == 1 ? finalString += i : finalString += ', ' + i
+        finalString += ', ' + (i + 4)
         i += 2
     } while (i <= 23 && i + 4 <= 23)
+    console.log(finalString)
 }
 
 hopper()

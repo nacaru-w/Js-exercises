@@ -60,8 +60,9 @@ fibonacci(+prompt("Inserte un número para conocer su secuencia de Fibonacci"))
 
 function howManyVowels(sentence) {
     vowelCounter = 0
+    let sentenceNoAccentsNoCapitals = sentence.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
     for (let index = 0; index < sentence.length; index++) {
-        switch (sentence[index]) {
+        switch (sentenceNoAccentsNoCapitals[index]) {
             case "a":
             case "e":
             case "i":

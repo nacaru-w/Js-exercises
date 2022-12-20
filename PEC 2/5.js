@@ -9,7 +9,6 @@
 // - 10 x 10 = 100
 
 function multiplicationTable() {
-    let finalString = '';
     for (let multiplicand = 1; multiplicand <= 10; multiplicand++) {
         for (let multiplier = 1; multiplier <= 10; multiplier++) {
             console.log(`${multiplicand} x ${multiplier} = ${multiplicand * multiplier}`)

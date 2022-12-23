@@ -10,10 +10,9 @@ function seeFactors(inputNumber) {
     let finalString = ''
     let threshold = inputNumber
     for (let counter = 2; threshold > 1; counter++) {
-        if (threshold % counter == 0) {
+        while (threshold % counter == 0) {
             threshold == inputNumber ? finalString += counter : finalString += '*' + counter;
             threshold /= counter;
-            counter = 1
             console.log(threshold)
         }
     }

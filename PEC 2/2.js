@@ -6,8 +6,8 @@
 
 function exponentiation(base, exponent) {
     try {
-        if (isNaN(base) || isNaN(exponent)) {
-            throw "Tu base o tu exponente no es un número"
+        if (isNaN(base) || isNaN(exponent) || exponent < 1) {
+            throw "Tu base o tu exponente no es un número o el exponente que has introducido no es positivo"
         } else {
             let result = base;
             for (let multiplicationsToExponent = 1; multiplicationsToExponent < exponent; multiplicationsToExponent++) {

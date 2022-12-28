@@ -1,8 +1,30 @@
 // 1- Crear un código que devuelva un carácter de un string a partir de su posición (índice en el String).
+function whatsInInput(string, input) {
+    console.log(string.charAt(input))
+}
+
+whatsInInput(prompt("Escribe una frase"), +prompt("Escribe el número de un carácter en la frase"))
 
 // 2- Crear un código que concatene dos Strings
+function joinSentences(sentence1, sentence2) {
+    console.log(sentence1.concat(sentence2))
+}
+
+joinSentences(prompt("Escribe una frase o palabra"), prompt("Escribe una segunda para unirla a la primera"))
 
 // 3- Dado un Array que contenga todo letras, que cree un String con el mismo orden que el array
+function wordBuilder() {
+    let array = [];
+    for (let char = ''; char != "STOP";) {
+        char = prompt("Escribe un carácter, para acabar escribe «STOP»")
+        if (char !== "STOP") {
+            char.length > 1 ? alert("Solo uno, por favor") : array.push(char)
+        }
+    }
+    console.log(array.join(''));
+}
+
+wordBuilder()
 
 // 4- Crear un código que devuelva si un String termina con un String dado.
 

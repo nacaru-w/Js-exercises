@@ -27,10 +27,27 @@ function wordBuilder() {
 wordBuilder()
 
 // 4- Crear un código que devuelva si un String termina con un String dado.
+function endsWith(input, ending) {
+    input.endsWith(ending) ? console.log("Tu frase termina en lo que escribiste") : console.log("Tu frase no termina así");
+}
+
+endsWith(prompt("Escribe una frase"), prompt("Escribe un string para ver si coincide con el final de la frase anterior"))
 
 // 5- Crear una función que compare dos Strings y nos diga si son iguales.
+function compare(input1, input2) {
+    input1.localeCompare(input2) === 0 ? console.log("Son iguales") : console.log("Esas frases no son iguales");
+}
+
+compare(prompt("Escribe una frase"), prompt("Escribe una segunda frase para ver si es igual a la primera"));
 
 // 6- Transformar un String en un Array en el que cada posición contenga cada una de las letras del String y después volver a construir un Array con el contenido del String pero en orden inverso.
+function reverse(input) {
+    let array = input.split("");
+    let reversedArray = array.reverse();
+    console.log(reversedArray.join(""))
+}
+
+reverse(prompt("Escribe una frase para darle la vuelta"))
 
 // 7- Imprimir por pantalla la fecha actual
 

@@ -50,9 +50,41 @@ function reverse(input) {
 reverse(prompt("Escribe una frase para darle la vuelta"))
 
 // 7- Imprimir por pantalla la fecha actual
+function todaysDate() {
+    let today = new Date()
+    console.log(`${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`)
+}
+
+todaysDate()
 
 // 8- Crear una fecha con los siguientes datos: 20 de mayo de 2018
+function dateIn2018() {
+    let date = new Date(2018, 4, 20)
+    console.log(date)
+}
+
+dateIn2018()
 
 // 9- Crear un código que imprima el número de milisegundos trascurridos desde el 1 de enero de 1970 a las 00.00.00 hasta el momento donde se ejecute tu código.
+function milisecondsSince1970() {
+    let date = new Date();
+    console.log(date.getTime())
+}
+
+milisecondsSince1970()
 
 // 10- Dado un numero introducido por el usuario, comprobar si es o no es un número entero.
+function isAnInteger(input) {
+    try {
+        if (isNaN(input)) {
+            throw "Lo que has puesto no se trata de un número"
+        } else {
+            Number.isInteger(input) ? console.log("Se trata de un número entero") : console.log("No se trata de un número entero")
+        }
+    } catch (e) {
+        console.log(e)
+    }
+
+}
+
+isAnInteger(+prompt("Inserta un número para saber si es entero o no"))
